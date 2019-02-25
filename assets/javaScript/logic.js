@@ -38,11 +38,9 @@ firebase.initializeApp(config);
     var remainder = moment().diff(moment.unix(firstTrain), "minutes")%frequency;
     var minutes = frequency - remainder;
     var arrival= moment().add(minutes, "m").format("hh:mm A"); 
-
     console.log(remainder); 
     console.log(minutes);
     console.log(arrival); 
-
     $("#trainTable > tBody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + arrival + "</td><td>" + minutes +"</td></tr>"); 
 
   })
