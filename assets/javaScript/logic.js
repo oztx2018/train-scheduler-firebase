@@ -20,10 +20,9 @@ firebase.initializeApp(config);
         firstTrain: firstTrain,
         frequency: frequency
     }
-
     trainData.ref().push(newTrain);
     alert("Train successfully added");
-
+    
     $("#trainNameInput").val("");
     $("#destinationInput").val("");
     $("#firstTrainInput").val("");
