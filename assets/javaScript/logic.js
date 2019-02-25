@@ -14,7 +14,6 @@ firebase.initializeApp(config);
       var destination = $("#destinationInput").val().trim();
       var firstTrain = moment($("#firstTrainInput").val().trim(),"HH : mm").subtract(10,"years").format("x");
       var frequency = $("#frequencyInput").val().trim(); 
-
     var newTrain = {
         name: trainName,
         destination: destination,
