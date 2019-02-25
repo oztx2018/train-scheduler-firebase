@@ -9,8 +9,6 @@ var config = {
 
 firebase.initializeApp(config);
 
-
-
   var trainData = firebase.database();
 
   $("#addTrainBtn").on ("click", function(){
