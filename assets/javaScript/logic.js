@@ -29,7 +29,6 @@ firebase.initializeApp(config);
     $("#frequencyInput").val("");
 
   })
-
   trainData.ref().on("child_added", function(snapshot){
     var name=snapshot.val().name;
     var destination = snapshot.val().destination; 
